@@ -141,17 +141,17 @@ namespace CourceToWebUC.Model.xslt.DataLoader
         /// <param name="_pathToDataFile">путь к папке с параметрами конвертации</param>
         /// <exception cref="ArgumentNullException"></exception>
         /// <exception cref="AppException">ошибка получения данных</exception>
-        public XSLTParamFromXML(string _pathToDataFile)
+        public XSLTParamFromXML(string _absPathToDataFile)
         {
             if (_pathToDataFile == null)
                 throw new ArgumentNullException();
 
             try
             {
-                dataPath =System.IO.Path.GetDirectoryName(_pathToDataFile);
+                dataPath = System.IO.Path.GetDirectoryName(_absPathToDataFile);
 
 
-                LoadData(_pathToDataFile);
+                LoadData(_absPathToDataFile);
             }
             catch(Exception ex)
             {
@@ -198,9 +198,7 @@ namespace CourceToWebUC.Model.xslt.DataLoader
             }
         }
 
-
-
-
+       
 
         
     }

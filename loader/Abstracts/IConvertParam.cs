@@ -7,7 +7,6 @@
  * Редактирован: 03.03.2015
  */
 
-using CourceToWebUC.Model.XSLTHelpers;
 using System;
 
 
@@ -16,7 +15,7 @@ namespace CourceToWebUC.Model
     /// <summary>
     /// интерфейс параметров конвертации 
     /// </summary>
-    public interface IConvertParam : IDataValidator
+    public interface IConvertParam 
     {
         /// <summary>
         /// файл шаблона
@@ -29,14 +28,9 @@ namespace CourceToWebUC.Model
         /// <summary>
         /// сформировать в конце Scorm пакет
         /// </summary>
-        bool IsToScorm { get; }
-        
+        bool IsToScorm { get; }      
 
-        /// <summary>
-        /// обработчик обновления       
-        /// параметров       
-        /// </summary>
-        event EventHandler<EventArgs> Updated;
+        
         /// <summary>
         /// обновить параметры
         /// </summary>     

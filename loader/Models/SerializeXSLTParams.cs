@@ -1,8 +1,5 @@
-﻿using CourceToWebUC.Model.CommonModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System;
+
 
 namespace CourceToWebUC.Model.xslt.DataLoader
 {
@@ -13,7 +10,7 @@ namespace CourceToWebUC.Model.xslt.DataLoader
     /// файла
     /// </summary>
     [Serializable]
-    public class SerializeXSLTParams
+    public class SerializeXSLTParams : IXSLTConvertParam
     {
         /// <summary>
         /// название основного

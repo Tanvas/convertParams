@@ -13,11 +13,8 @@
  */
 
 using CourceToWebUC.Model.CommonModels;
-using CourceToWebUC.Model.XSLTHelpers;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+
 
 namespace CourceToWebUC.Model.xslt
 {
@@ -26,7 +23,7 @@ namespace CourceToWebUC.Model.xslt
     /// курса преобразованием
     /// xslt
     /// </summary>
-    public interface IXSLTConvertParam 
+    public interface IXSLTConvertParam
     {
         /// <summary>
         /// название основного
@@ -83,11 +80,7 @@ namespace CourceToWebUC.Model.xslt
         /// схема конвертации манифеста scorm
         /// </summary>
         string ManifestSheme { get; }
-        /// <summary>
-        /// получить параметры флэша
-        /// </summary>
-        FlashSettings FlashParam { get; }
-
+       
         
        
     }
